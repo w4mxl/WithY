@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.farbox.wml.withy" >
+
+    <application
+        android:name="com.farbox.wml.withy.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/lover"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.farbox.wml.withy.ui.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.farbox.wml.withy.ui.AboutActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.farbox.wml.withy.ui.AboutActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AboutActivity" />
+        </activity>
+        <activity
+            android:name="com.farbox.wml.withy.ui.EditNewThing"
+            android:label="@string/title_activity_edit_new_thing"
+            android:parentActivityName=".ui.MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AboutActivity" />
+        </activity>
+    </application>
+
+</manifest>

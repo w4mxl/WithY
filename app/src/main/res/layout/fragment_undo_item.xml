@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/card_list_background">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ripple:rv_color="@color/gray"
+        ripple:rv_alpha="160"
+        android:layout_toLeftOf="@+id/more2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/card_spacing"
+            android:layout_marginRight="@dimen/card_spacing"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/card">
+
+            <TextView
+                android:id="@+id/undo_thing_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_spacing"
+                android:textSize="18sp"
+                android:textColor="@color/gray" />
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/card_spacing"
+                android:src="@drawable/e_face" />-->
+
+        </LinearLayout>
+
+    </com.andexert.library.RippleView>
+
+</LinearLayout>

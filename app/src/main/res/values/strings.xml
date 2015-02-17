@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">一一</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_about">关于</string>
+    <string name="action_add">添加</string>
+
+    <string-array name="nav_array">
+        <item>所有的事</item>
+        <item>已完成的</item>
+        <item>待完成的</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about">关于</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_edit_new_thing">新的事</string>
+    <string name="declaration">因为要一起完成的事情被添加之后默认是不能更改和删除的,请慎重![握拳]</string>
+    <string name="title_new_thing">添加一件新的事</string>
+
+</resources>

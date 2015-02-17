@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farbox.wml.withy.ui.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="40dp"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about_pic" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="{ 一件小事 一串记忆 }"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♥" />
+
+        <TextView
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MADE BY WML" />
+
+        <TextView
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoLink="web"
+            android:text="http://wml.farbox.com" />
+
+        <TextView
+            android:text="v1.0"
+            android:textSize="13sp"
+            android:textColor="@color/gray"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <com.farbox.wml.withy.view.EmotionsView
+        android:id="@+id/emotion_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.farbox.wml.withy.view.EmotionsView>
+
+
+</FrameLayout>
